@@ -264,6 +264,37 @@ const PropuestaPage = () => {
             Será un gusto acompañarlos en el desarrollo de una presencia digital que refleje la identidad y el nivel profesional de <span className="text-white font-medium">{clientInfo.name}</span>.
           </p>
           
+          {/* CEO Info Card */}
+          <div className="bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl p-8 border border-white/10 max-w-md mx-auto mb-12">
+            <div className="flex flex-col items-center gap-4">
+              {eterBranding.ceo.photo ? (
+                <img 
+                  src={eterBranding.ceo.photo} 
+                  alt={eterBranding.ceo.name}
+                  className="w-24 h-24 rounded-full object-cover border-2 border-cyan-500/30"
+                />
+              ) : (
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-cyan-500/20 to-purple-500/20 flex items-center justify-center border-2 border-cyan-500/30">
+                  <span className="text-3xl font-bold text-cyan-400">ML</span>
+                </div>
+              )}
+              <div className="text-center">
+                <h4 className="text-white font-semibold text-lg">{eterBranding.ceo.name}</h4>
+                <p className="text-cyan-400 text-sm font-medium">{eterBranding.ceo.role} - Éter</p>
+              </div>
+              <div className="flex flex-col gap-2 mt-2">
+                <a href={`tel:${eterBranding.ceo.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm">
+                  <Phone className="w-4 h-4 text-cyan-400" />
+                  {eterBranding.ceo.phone}
+                </a>
+                <a href={`mailto:${eterBranding.ceo.email}`} className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm">
+                  <Mail className="w-4 h-4 text-cyan-400" />
+                  {eterBranding.ceo.email}
+                </a>
+              </div>
+            </div>
+          </div>
+          
           <div className="flex flex-col items-center gap-4">
             <img 
               src={eterBranding.logo} 
@@ -276,9 +307,10 @@ const PropuestaPage = () => {
           <div className="mt-12 pt-8 border-t border-white/5">
             <Link 
               to="/prototipo" 
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-rose-500 hover:from-orange-400 hover:to-rose-400 rounded-full text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25"
             >
-              Ver Prototipo del Proyecto <ExternalLink className="w-4 h-4" />
+              <Eye className="w-5 h-5" />
+              Ver Prototipo del Proyecto
             </Link>
           </div>
         </div>

@@ -10,7 +10,7 @@ export const eterBranding = {
     role: "CEO",
     phone: "+595 984 085642",
     email: "etereas.projects@gmail.com",
-    photo: "https://scontent.fasu11-2.fna.fbcdn.net/v/t39.30808-6/470224957_122127848336551904_4565432786872303285_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=u1C08YTj2wQQ7kNvwEnOjoF&_nc_oc=Admztwl4DztSeX2hQ5fONhdd7XV3P6Azpf14_JYxCOYk7hxyjqllctL0c8xLDQheRUHdopwkjZxu1iaI_4Mcj0Ca&_nc_zt=23&_nc_ht=scontent.fasu11-2.fna&_nc_gid=pnDVp-sdwVHxVRt65O3c0g&oh=00_Afq3w7HwfS1n-XslDTnIgc4oJkXeJ8lW0M76cxIerAppfQ&oe=696C5FCB" // Se actualizará cuando el usuario proporcione la foto
+    photo: "" // Se actualizará cuando el usuario proporcione la foto
   }
 };
 

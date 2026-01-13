@@ -4,7 +4,14 @@ export const eterBranding = {
   logo: "https://customer-assets.emergentagent.com/job_solumterra-web/artifacts/lbris3lv_ETER%20%2821%29.png",
   name: "Éter",
   tagline: "Desarrollo Web · Sistemas · Integración de IA",
-  description: "Startup tecnológica B2B que ofrece a las MIPYMEs todo el poder de la inteligencia artificial"
+  description: "Startup tecnológica B2B que ofrece a las MIPYMEs todo el poder de la inteligencia artificial",
+  ceo: {
+    name: "Máximo Ledesma Luján",
+    role: "CEO",
+    phone: "+595 984 08564",
+    email: "etereas.projects@gmail.com",
+    photo: "" // Se actualizará cuando el usuario proporcione la foto
+  }
 };
 
 export const clientInfo = {

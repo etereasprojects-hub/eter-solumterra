@@ -43,10 +43,14 @@ const PropuestaPage = () => {
             alt="Éter Logo" 
             className="h-10 object-contain"
           />
-          <nav className="flex items-center gap-6">
-            <Link to="/" className="text-white/70 hover:text-white transition-colors text-sm font-medium">Propuesta</Link>
-            <Link to="/prototipo" className="text-white/70 hover:text-white transition-colors text-sm font-medium flex items-center gap-1">
-              Ver Prototipo <ExternalLink className="w-3 h-3" />
+          <nav className="flex items-center gap-4">
+            <Link to="/" className="text-white/70 hover:text-white transition-colors text-sm font-medium hidden sm:block">Propuesta</Link>
+            <Link 
+              to="/prototipo" 
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-rose-500 hover:from-orange-400 hover:to-rose-400 rounded-full text-white font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25"
+            >
+              <Eye className="w-4 h-4" />
+              Ver Prototipo
             </Link>
           </nav>
         </div>

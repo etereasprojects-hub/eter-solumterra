@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { eterBranding, clientInfo, packages, additionalInfo, summary } from '../data/mock';
-import { Globe, Server, Brain, Check, Sparkles, Zap, Shield, Users, MessageSquare, Calendar, LayoutGrid, FileText, DollarSign, Building2, Mail, ChevronRight, ExternalLink, Info, MonitorSmartphone } from 'lucide-react';
+import { Globe, Server, Brain, Check, Sparkles, Zap, Shield, Users, MessageSquare, Calendar, LayoutGrid, FileText, DollarSign, Building2, Mail, ChevronRight, ExternalLink, Info, MonitorSmartphone, Phone, Eye } from 'lucide-react';
 
 const PackageIcon = ({ id }) => {
   const iconClass = "w-8 h-8";
